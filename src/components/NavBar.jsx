@@ -6,6 +6,7 @@ const NavBar = () => {
                 <li className="nav-item">Hogar</li>
                 <li className="nav-item">Baño</li>
                 <li className="nav-item">Profesional</li>
+                <li className="nav-item">Logo</li>
             </ul>
         </nav>
     )
