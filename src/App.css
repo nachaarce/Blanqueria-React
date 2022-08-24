@@ -8,21 +8,21 @@
 .item-cart {
   display: block;
 position: relative;
-bottom: 25px;
-width: 120%;
+bottom: 32px;
+width: 150%;
 height: 100%;
 }
 .logomym {
 display: block;
 position: relative;
 bottom: 20px;
-width: 100px;
-height: 100px;
+width: 120px;
+height: 120px;
 }
 .nav-item-list {
   display: block;
   position: relative;
-  top: 15px;
+  top: 20px;
 }
 
 /* BODY */
@@ -30,3 +30,17 @@ height: 100px;
   text-align: center;
 }
 
+/* MEDIA QUERY */
+@media (max-width: 600px) { 
+  .logomym {
+    display: none;
+  }
+  .item-cart {
+    display: block;
+    position: relative;
+    top: 10px;
+    width: 120%;
+    height: 100%;
+  }
+
+}

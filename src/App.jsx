@@ -9,7 +9,8 @@ function App() {
     <div>
       <header>
         <NavBar />
-        <ItemListContainer greeting="Bienvenido a la Blanqueria" estilo="italic"/>
+        <ItemListContainer greeting="Hogar" estilo="italic" size="30px"/>
+        <ItemListContainer greeting="Productos para armonizar tu lugar." estilo="italic" size="20px" gris="gray" weight="normal" />
       </header>
       </div>
   );
