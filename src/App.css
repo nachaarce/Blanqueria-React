@@ -2,12 +2,27 @@
 .navbar-items{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   list-style: none;
 }
 .item-cart {
+  display: block;
+position: relative;
+bottom: 25px;
 width: 120%;
 height: 100%;
+}
+.logomym {
+display: block;
+position: relative;
+bottom: 20px;
+width: 100px;
+height: 100px;
+}
+.nav-item-list {
+  display: block;
+  position: relative;
+  top: 15px;
 }
 
 /* BODY */

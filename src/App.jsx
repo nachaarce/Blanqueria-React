@@ -9,13 +9,8 @@ function App() {
     <div>
       <header>
         <NavBar />
-        <ItemListContainer list="Hogar" estilo="italic"/>
-        <ItemListContainer list="Baño" estilo="italic"/>
-        <ItemListContainer list="Fragancias" estilo="italic"/>
+        <ItemListContainer greeting="Bienvenido a la Blanqueria" estilo="italic"/>
       </header>
-      <main>
-        <h1 className='titulo'>Bienvenido a Blanqueria MyM</h1>
-      </main>
       </div>
   );
 }

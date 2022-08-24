@@ -1,8 +1,6 @@
-const ItemListContainer = (greeting) =>  {
+const ItemListContainer = (props) =>  {
     return (
-    <ul className="navbar-items">
-        <li style={{fontStyle: greeting.estilo}}> {greeting.list} </li>
-    </ul>
+        <h1 style={{fontStyle: props.estilo , textAlign: 'center'}}>{props.greeting} </h1>
     )
 }
 
