@@ -1,46 +1,124 @@
 /* NAVBAR ESTILOS */
-.navbar-items{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style: none;
-}
-.item-cart {
-  display: block;
-position: relative;
-bottom: 32px;
-width: 150%;
-height: 100%;
-}
-.logomym {
-display: block;
-position: relative;
-bottom: 20px;
-width: 120px;
-height: 120px;
-}
-.nav-item-list {
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: block;
   position: relative;
-  top: 20px;
 }
+  .navbar-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
 
-/* BODY */
-.titulo {
-  text-align: center;
-}
-
-/* MEDIA QUERY */
-@media (max-width: 600px) { 
-  .logomym {
-    display: none;
   }
   .item-cart {
+  width: 25px;
+  height: 25px;
+  }
+  .number {
+    display: block;
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: 9px;
+    font-size: 20px;
+  }
+  .container-cart {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 10px 10px;
     display: block;
     position: relative;
-    top: 10px;
-    width: 120%;
-    height: 100%;
+    top: 30px;
+    width: 70px;
+    height: 30px;
+    padding: 6px;
+  }
+  .container-cart:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .logomym {
+  display: block;
+  position: relative;
+  bottom: 5px;
+  width: 120px;
+  height: 110px;
+  }
+  /* .nav-item-list {
+    display: block;
+    position: relative;
+    top: 40px;
+    color: black;
+    font-style: oblique;
+    font-size: 17px;
+  } */
+  .nav-link {
+    display: block;
+    position: relative;
+    top: 40px;
+    text-decoration: none;
+    color: black;
+    font-style: oblique;
+    font-size: 17px;
+  }
+  .nav-link:hover {
+    text-shadow: 1px 1px 2px rgb(196, 194, 194);
+  }
+  /* BODY */
+  .titulo {
+    text-align: center;
   }
 
+  /* CONTADOR CARD */
+  #count {
+    display:block;
+    position: relative;
+    left: 600px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(180, 177, 177);
+
+  }
+.countNumber {
+  display: inline-block;
+  width: 60px;
+  background-color: white;
+  text-align: center;
 }
+.productName {
+  font-style: italic;
+  margin-top: 5px;
+  text-align: center;
+}
+.btnLess {
+  margin-left: 40px;
+  font-size: 18px;
+  color: black;
+}
+.btnMore {
+  font-size: 18px;
+  color: black;
+  margin-left: auto;
+}
+.btnAdd {
+margin-top: 50px;
+margin-left: 40px;
+}
+
+
+
+
+  /* MEDIA QUERY */
+  @media (max-width: 600px) { 
+    .logomym {
+      display: none;
+    }
+    .item-cart {
+      display: block;
+      position: relative;
+      top: 10px;
+      width: 120%;
+      height: 100%;
+    }
+
+  }

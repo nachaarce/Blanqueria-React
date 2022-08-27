@@ -1,7 +1,7 @@
-const ImgCart = () => {
-    return (
-        <li className="nav-item"><img src="../images/cart-fill-2.svg" alt="cart" className="item-cart" /></li>
-    )
-}
+    const ImgCart = () => {
+        return (
+            <li className="nav-item"><div className="container-cart"><img src="../images/cart-fill-2.svg" alt="cart" className="item-cart" /></div></li>
+        )
+    }
 
-export default ImgCart;
+    export default ImgCart;

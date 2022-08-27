@@ -1,6 +1,13 @@
+import ItemCount from "../components/ItemCount"
 const ItemListContainer = (props) =>  {
+    const onAdd = (val)  => {
+        (console.log (`${val} unidades en tu carrito`));
+    }
     return (
-        <h1 style={{fontStyle: props.estilo , textAlign: 'center', fontSize: props.size, color: props.gris, fontWeight: props.weight}}>{props.greeting} </h1>
+        <div>
+        <h1 style={{textAlign: 'center'}}>{props.greeting} </h1>
+        <ItemCount initial={1} stock={5} onAdd= {onAdd} />
+        </div>
     )
 }
 
