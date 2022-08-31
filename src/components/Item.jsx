@@ -1,7 +1,7 @@
 const Item = ({title, thumbnail,order_backend, permalink}) => {
     return (
-        <div key={order_backend}>
-            <img src={thumbnail}/>
+        <div key={id}>
+            <img src=""/>
             <div className="container">
                 <h4>{title}</h4>
                 <p>{permalink}</p>
