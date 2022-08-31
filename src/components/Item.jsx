@@ -1,10 +1,10 @@
-const Item = ({title, thumbnail,order_backend, permalink}) => {
+const Item = ({producto}) => {
     return (
-        <div key={id}>
-            <img src=""/>
+        <div className="card-item">
             <div className="container">
-                <h4>{title}</h4>
-                <p>{permalink}</p>
+            <img src={producto.thumbnail} alt="img"/>
+                <h4>{producto.title}</h4>
+                <p>{producto.price}</p>
                 <button>Agregar producto</button>
             </div>
         </div>

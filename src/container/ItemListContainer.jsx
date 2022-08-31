@@ -9,24 +9,28 @@ const onAdd = (contador)  => {
         const [productos, setProductos] = useState ([]); 
 
         const buscarProductos = async () => {
+            try{
             const response = await fetch("https://api.mercadolibre.com/sites/MLA/search?q=Ferrari")
             const data = await response.json();
             setProductos(data.results);
-            
-        }
+            }catch(e){
+                console.log(e)
+            }
+        } 
+        console.log(productos)
 
         useEffect (() => {
             buscarProductos();
         }, 
-          // eslint-disable-next-line react-hooks/exhaustive-deps
         [])
+
         return (
             <>
             <div>
             <h1 style={{textAlign: 'center'}}>{props.greeting} </h1>
             <ItemCount initial={1} stock={5} onAdd= {onAdd} />
             </div>
-            <ItemList items={productos}/>
+            <ItemList productos={productos}/>
             </>
         )
     }
