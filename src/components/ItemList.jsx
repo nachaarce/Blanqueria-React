@@ -1,10 +1,11 @@
 import Item from './Item'
 const ItemList = ({productos}) => {
-    {productos.map ((producto) => {
+    {productos.map ((producto,index) => {
         return (
-            <Item  item={producto} />
+            <Item  item={producto} key={index}/>
         );
     })}
 }
+
 
 export default ItemList;
