@@ -9,7 +9,7 @@
       <div>
         <header>
           <NavBar />
-          <ItemListContainer greeting="Bienvenido a Blanqueria MyM" />
+          <ItemListContainer />
         </header>
         </div>
     );
