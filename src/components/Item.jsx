@@ -4,8 +4,8 @@ const Item = ({producto}) => {
             <div className="container">
             <img src={producto.thumbnail} alt="img"/>
                 <h4>{producto.title}</h4>
-                <p>{producto.price}</p>
-                <button>Agregar producto</button>
+                <p>${producto.price}</p>
+                <button className="button1">Agregar producto</button>
             </div>
         </div>
     )
