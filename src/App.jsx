@@ -2,6 +2,7 @@
   import './App.css';
   import NavBar from './components/NavBar';
   import ItemListContainer from './container/ItemListContainer';
+  import ItemDetailContainer from './container/ItemDetailContainer';
 
 
   function App() {
@@ -9,7 +10,10 @@
       <div>
         <header>
           <NavBar />
-          <ItemListContainer />
+          {/* <ItemListContainer /> */}
+          <div>
+          <ItemDetailContainer greeting='Bienvenidos a blanqueria MyM'/>
+          </div>
         </header>
         </div>
     );

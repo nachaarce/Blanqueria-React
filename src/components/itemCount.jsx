@@ -15,7 +15,6 @@
         
         return (
             <div id='count'>
-                <h3 className='productName'>Producto</h3>
                 <div className='container'>
                     <div className='row'>
                 <button disabled={count <= 1} onClick={restProduct} className="btnLess">-</button>
