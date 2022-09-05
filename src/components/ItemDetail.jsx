@@ -5,6 +5,7 @@ return (
             <img src={items.thumbnail} alt="img"/>
                 <h4>{items.title}</h4>
                 <p>${items.price}</p>
+                <p>{items.id}</p>
                 <button className="button1">Agregar producto</button>
             </div>
         </div>
