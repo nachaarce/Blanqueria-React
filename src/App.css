@@ -73,10 +73,12 @@
   #count {
     display:block;
     position: relative;
-    left: 600px;
+    right: 20px;
     width: 200px;
-    height: 200px;
-    background-color: rgb(180, 177, 177);
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+  
 
   }
 .countNumber {
@@ -104,10 +106,15 @@
 margin-top: 50px;
 margin-left: 40px;
 }
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 .card-item {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 500px;
+  width: 300px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -115,14 +122,13 @@ margin-left: 40px;
 .card-item:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
 .container {
   padding: 2px 16px;
   text-align: center;
 }
 .button1 {
   background-color: #4CAF50;
-  margin: 10px;
+  margin-bottom: 20px;
   color: white;
   padding: 10px;
 } 

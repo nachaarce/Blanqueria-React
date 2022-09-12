@@ -21,9 +21,9 @@
                 <span className='countNumber'>{count}</span>
                 <button disabled={count >= stock } onClick={sumProduct} className="btnMore">+</button>
                 </div>
-                <div className='row'>
+                {/* <div className='row'>
                     <button  disabled={count >= stock} onClick={() => onAdd(count)} className="btnAdd">Agregar al carrito</button>
-                </div>
+                </div> */}
                 </div>
             </div>
         )

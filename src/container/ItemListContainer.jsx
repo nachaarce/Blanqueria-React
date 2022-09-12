@@ -11,29 +11,30 @@ const onAdd = (contador)  => {
 
         const buscarProductos = async () => {
             try{
-            const response = await fetch("https://api.mercadolibre.com/sites/MLA/search?q=Ferrari")
+            const response = await fetch("https://api.mercadolibre.com/sites/MLA/search?q=Ferrari");
             const data = await response.json();
-            setProductos(data.results[1]);
-            }catch(e){
+            setProductos(data.results);
+            }
+            catch(e){
                 console.log(e)
             }
         } 
         console.log(productos)
 
         useEffect (() => {
-            buscarProductos()
-            
+            const time = setTimeout(() =>{
+                buscarProductos();
+            }, 2000);
         }, [])
 
         return (
-            
+            <>
             <div>
-                
-            {/* <h1 style={{textAlign: 'center'}}>{props.greeting} </h1>
-            <ItemCount initial={1} stock={5} onAdd= {onAdd} /> */}
+            <h1 style={{textAlign: 'center'}}>{props.greeting} </h1>
+            {/* <ItemCount initial={1} stock={5} onAdd= {onAdd} /> */}
             </div>
-            // <ItemList productos={productos}/>
-            
+            <ItemList productos={productos}/>
+            </>
         )
     }
 

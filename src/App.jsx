@@ -2,17 +2,16 @@
   import './App.css';
   import NavBar from './components/NavBar';
   import ItemListContainer from './container/ItemListContainer';
-  import ItemDetailContainer from './container/ItemDetailContainer';
-
+  import ItemDetailContainer from './container/ItemDetailContainer'; 
 
   function App() {
     return (
       <div>
         <header>
           <NavBar />
-          {/* <ItemListContainer /> */}
+          <ItemListContainer greeting='Bienvenidos a blanqueria MyM'/> 
           <div>
-          <ItemDetailContainer greeting='Bienvenidos a blanqueria MyM'/>
+          {/* <ItemDetailContainer greeting='Bienvenidos a blanqueria MyM'/> */}
           </div>
         </header>
         </div>

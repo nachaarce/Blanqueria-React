@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "title": "Bata",
+        "img": "images/bata.png",
+        "stock": "5",
+        "precio": "1100"
+    },
+    {
+        "id": "2",
+        "title": "Toallas",
+        "img": "images/toalla-banio.png",
+        "stock": "5",
+        "precio": "1100"
+    },
+    {
+        "id": "3",
+        "title": "Set de baño",
+        "img": "images/set-banio.png",
+        "stock": "5",
+        "precio": "1100"
+    }
+]
